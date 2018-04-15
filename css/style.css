@@ -376,9 +376,19 @@ h1, h2, h3, h4, h5, h6, figure {
 /* .login{
 margin-top: 30px;
 }
-.signUp{
-margin-top: 0px;
-} */
+*/.signUp{
+margin-top: -145px;
+width: 165% !important;
+margin-left: -87px;
+}
+@media screen and (max-width: 1000px) {
+  .signUp{
+    margin-top: 0px;
+    width: 100% !important;
+    margin-left: 0px;
+  }
+}
+
 
 #gtco-header,
 #gtco-counter,
@@ -1331,7 +1341,6 @@ form label {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 8px 30px;
 }
 .btn.btn-md {
   padding: 8px 20px !important;
@@ -2082,15 +2091,33 @@ body {
   margin-right: auto;
 }
 
-
+p.cursive-font.journytag{
+  font-size:  30px;
+  text-align: left;
+}
 /* _timeline.css */
 .timeline {
   position: relative;
   height: 3160px;
   margin: 170px auto;
   padding: 160px 0;
-  margin-left: -100px;
+  margin-left: -108px;
+  margin-top: -120px;
 
+}
+@media (min-width: 800px){
+  .timeline {
+    position: relative;
+    height: 3160px;
+    margin: 170px auto;
+    padding: 160px 0;
+    margin-left: -100px;
+    margin-top: -50px;
+  }
+  p.cursive-font.journytag{
+    font-size:  80px;
+    text-align: center;
+  }
 }
 .timeline::before {
   content: "";
@@ -2098,7 +2125,7 @@ body {
   top: 170px;
   left: 10%;
   width: 4px;
-  height: 98%;
+  height: 97%;
   background-color: rgb(77, 77, 77);
 }
 @media (min-width: 800px){
@@ -2283,5 +2310,63 @@ float: left;
   font-family: "Kaushan Script", cursive;
 }
 input[type=number]{
-  width: 40px;
+  width: 70px;
+}
+@media screen and (max-width: 768px) {
+  input[type=number]{
+    width: 100%;
+  }
+}
+
+
+.callory{
+  background-color:gray;
+  width:100px !important;
+  border-radius:10px;
+  color:white;
+  text-align: center;
+  border:5px;
+
+}
+
+
+.callory1{
+  background-color:rgb(255, 185, 56);
+  width:100px !important;
+  border-radius:10px;
+  text-align:center;
+  color:white;
+  border:5px;
+  margin-top: 3px;
+}
+    /* Remove controls from Safari and Chrome */
+.callory::-webkit-inner-spin-button,
+.callory::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0; /* Removes leftover margin */
+}
+
+.btn_select_style ,.btn_unset_style{
+background-color: gray;
+color: white;
+}
+
+.btn_select_style:hover,.btn_unset_style:hover{
+background-color: orange;
+color: white;
+}
+
+.btn_select_style:focus{
+background-color: orange;
+color: white;
+}
+
+.img{
+width:100px;
+height:100px;
+border-radius:50px;
+padding:3px;
+background-color:gray;
+border-color:rgb(255, 185, 56);
+
 }
