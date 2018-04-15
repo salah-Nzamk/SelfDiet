@@ -2405,6 +2405,14 @@ border-color:rgb(255, 185, 56);
   left: 0;
   width: 30px;
 }
+.arrow2:before,
+.arrow2:after {
+  top: 300px;
+}
+.arrow3:before,
+.arrow3:after {
+  top: 150px;
+}
 
 .arrow:before {
   -webkit-transform: rotate(45deg) translateX(-23%);
